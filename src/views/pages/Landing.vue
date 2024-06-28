@@ -4,6 +4,7 @@ import { computed, ref } from 'vue';
 import AppConfig from '@/layout/AppConfig.vue';
 import { useRouter } from 'vue-router';
 import { usePrimeVue } from 'primevue/config';
+import FindRideForm from '@/components/FindRideForm.vue';
 
 const $primevue = usePrimeVue();
 
@@ -101,6 +102,13 @@ const navigateToDashboard = () => {
                 </div>
             </div>
             <div class="py-4 px-4 mx-0 md:mx-6 lg:mx-8 lg:px-8 z-2">
+
+                <div id="find-ride" class="mb-6 py-6 md:my-8 md:py-8">
+                    <div class="text-900 font-bold text-5xl mb-6 text-center">Find a ride</div>
+                    <div class="text-700 text-xl mb-8 text-center line-height-3">Connecting You to Your Destination, Safely and Comfortably.</div>
+                    <FindRideForm/>
+                </div>
+
                 <div id="home" class="grid grid-nogutter justify-content-between align-items-center mb-6 py-6 md:mb-8 md:py-8">
                     <div class="col-12 md:col-4 flex flex-column gap-4 flex-order-1 md:flex-order-0 align-items-center md:align-items-start text-center md:text-left">
                         <span class="block text-900 font-bold text-4xl">Modern, stylish and clean</span>

@@ -5,6 +5,89 @@ import AppSubMenu from './AppSubMenu.vue';
 
 const model = ref([
     {
+        label: 'Rides',
+        icon: 'pi pi-home',
+        items: [
+            {
+                label: 'Dashboard',
+                icon: 'pi pi-fw pi-home',
+                to: '/dashboard'
+            },
+            {
+                label: 'Find Rides',
+                icon: 'pi pi-fw pi-search',
+                to: '/find-rides'
+            },
+            {
+                label: 'My Rides',
+                icon: 'pi pi-fw pi-map',
+                to: '/my-rides'
+            },
+            {
+                label: 'Publish Ride',
+                icon: 'pi pi-fw pi-pen-to-square',
+                to: '/publish-ride'
+            },
+            {
+                label: 'Bookings',
+                icon: 'pi pi-fw pi-book',
+                to: '/bookings'
+            },
+            {
+                label: 'Chat',
+                icon: 'pi pi-fw pi-comments',
+                to: '/apps/chat'
+            }
+        ]
+    },
+    {
+        label: 'User',
+        icon: 'pi pi-user',
+        items: [
+            {
+                label: 'Profile',
+                icon: 'pi pi-fw pi-id-card',
+                to: '/profile/create'
+            },
+            {
+                label: 'Vehicles',
+                icon: 'pi pi-fw pi-car',
+                to: '/publish-ride'
+            },
+            {
+                label: 'Calendar',
+                icon: 'pi pi-fw pi-calendar',
+                to: '/apps/calendar'
+            }
+        ]
+    },
+    {
+        label: 'Support',
+        icon: 'pi pi-home',
+        items: [
+            {
+                label: 'About Us',
+                icon: 'pi pi-fw pi-user',
+                to: '/pages/aboutus'
+            },
+            {
+                label: 'Help',
+                icon: 'pi pi-fw pi-question-circle',
+                to: '/pages/help'
+            },
+            {
+                label: 'FAQ',
+                icon: 'pi pi-fw pi-question',
+                to: '/pages/faq'
+            },
+            {
+                label: 'Contact Us',
+                icon: 'pi pi-fw pi-phone',
+                to: '/pages/contact'
+            }
+        ]
+    },
+    {
         label: 'Dashboards',
         icon: 'pi pi-home',
         items: [
